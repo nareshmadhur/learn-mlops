@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Welcome to Flask and Plotly
+        </title>
+    </head>
+
+    <body>
+    <h1>{{header}}</h1>
+    <div id="chart1" class="chart"></div>
+    </body>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs={{graph | safe}};
+    Plotly.plot('chart1',graphs,{});
+</script>
+</html>
